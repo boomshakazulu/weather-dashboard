@@ -1,0 +1,8 @@
+.container-fluid {
+    justify-content: center!important;
+}
+
+#currentDay {
+    border-color: black;
+    border-style: solid;
+}
