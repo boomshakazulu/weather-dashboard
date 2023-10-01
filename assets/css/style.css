@@ -6,3 +6,39 @@
     border-color: black;
     border-style: solid;
 }
+
+#currentDay h3 {
+    margin-left: 25px;
+}
+
+#currentDay p {
+    margin-left: 25px; 
+}
+
+.icon img {
+    width: 40px;
+}
+
+.mainIcon {
+    float: right;
+    position: relative;
+    bottom: 70px;
+}
+
+.cardCollection {
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+nav div{
+    background-color: rgb(3, 3, 78);
+}
+
+h1 {
+    color: aliceblue!important;
+}
+
+.card {
+    background-color: rgb(3, 3, 78);
+    color: aliceblue!important;
+}
