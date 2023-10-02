@@ -44,7 +44,6 @@ searchBtn.addEventListener("click", function() {
     fetch(queryURL).then(response => response.json()).then(data => { 
        var lat = data.coord.lat
        var lon = data.coord.lon
-       console.log(data)
         getWeatherData(city, lat, lon) 
     })
 });
@@ -83,7 +82,6 @@ function getWeatherData(city, lat, lon) {
     //gathers and saves the internal storage array
     var oldHistory = JSON.parse(localStorage.getItem("searches")) || []
     var history = city
-    console.log (city)
     if (!oldHistory.includes(history)){
         oldHistory.push(history)
         localStorage.setItem("searches", JSON.stringify(oldHistory))
@@ -111,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
             fetch(queryURL).then(response => response.json()).then(data => { 
                var lat = data.coord.lat
                var lon = data.coord.lon
-               console.log(data)
                 getWeatherData(city, lat, lon) 
             })
         })
