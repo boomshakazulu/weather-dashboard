@@ -40,7 +40,7 @@ var genCard = (city, cardData, index) => {
 //on click replaces spaces in searches queries the api and returns logitude and latitude
 searchBtn.addEventListener("click", function() {
     var city = textArea.value.split(/\s+/).join("+")
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
     fetch(queryURL).then(response => response.json()).then(data => { 
        var lat = data.coord.lat
        var lon = data.coord.lon
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     createButtons();
     $(document).on('click', '.btn-secondary', function (){
             city= this.textContent.split(/\s+/).join("+")
-            var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+            var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
             fetch(queryURL).then(response => response.json()).then(data => { 
                var lat = data.coord.lat
                var lon = data.coord.lon
