@@ -11,5 +11,5 @@ To generate a 5 day weather forecast simply insert a city in the search box and 
 ![alt text](https://github.com/boomshakazulu/weather-dashboard/blob/main/assets/images/weather.gif)
 
 ## Credits
-Weather Data pulled from Open Weather Map
+Weather Data pulled from Open Weather Map<br>
 [https://openweathermap.org](https://openweathermap.org/)
