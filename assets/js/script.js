@@ -5,7 +5,7 @@ var cardsDiv = document.querySelector(".cardCollection")
 var currentCard = document.querySelector("#currentDay")
 var city = textArea.value
 var historyBtns = document.querySelector(".history")
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
 
 // generates search history buttons
 var genBtn = (data) => {
